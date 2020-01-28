@@ -1,14 +1,14 @@
 # PyShell - TEO KALTRACHIAN
 
-Ce projet a pour but de créer un Shell Python durant le 3ème semestre en ITI. Ce projet à été réalisé entièrement en Python 3. Il fallait reproduire le shell UNIX qui s'affiche sur le terminal pour un ensemble de commandes définis. Les commanndes sont séparées par un ";" et elles sont exécutée à la pression de la touche ENTER.
+Ce projet a pour but de créer un Shell Python durant le 3ème semestre en ITI à HEPIA. Ce projet a été réalisé entièrement en Python 3. Il fallait reproduire le shell UNIX qui s'affiche sur le terminal pour un ensemble de commandes définis. Les commandes sont séparées par un ";" et elles sont exécutée à la pression de la touche ENTER.
 
 ## Explication du PyShell
 
 Après avoir entrée la ou les commandes, le user's input va etre parser et puis
-décomposé en commande et parametres. Cette commande va etre vérifiée si elle ne s'agit pas
-d'un Alias, si oui l'Alias retournera la commande correspondante. Ensuite, pour un code plus claire et lisible, j'ai décidé d'utiliser un moyen de contourner cette verification enorme de "is - Elif - Else" du "match" entre la commande du user et la fonction qui la défini. 
-J'ai donc crée des classes de commandes qui vont etre crée et appelé grace à leur nom avec le nom de la commande choisi par le user. Celà me permet de faire une seule vérification pour "matcher" la commande désirée avec sa fonctionnalité. De plus, le tout se trouve dans unn "try - except" pour gérer toute les erreurs de toute les commandes plus facilement.
-Des "Tip" sont aussi affichés dans le terminal pour aider l'utilisateur pour des fautes de frappes ou pour la syntax d'une commandes.
+décomposé en commande et paramètres. On va vérifiée si cette commande ne s'agit pas
+d'un Alias, si oui l'Alias retournera la commande correspondante. Ensuite, pour un code plus claire et lisible, j'ai décidé d'utiliser un moyen de contourner cette verification enorme de "if - Elif - Else" du "match" entre la commande du user et la fonction qui la défini. 
+J'ai donc crée des classes de commandes qui vont etre crée et appelé grace à leur nom avec le nom de la commande choisi par le user. Celà me permet de faire une seule vérification pour "matcher" la commande désirée avec sa fonctionnalité. De plus, le tout se trouve dans un "try - except" pour gérer toutes les erreurs de toutes les commandes plus facilement.
+Des "Tip" sont aussi affichés dans le terminal pour aider l'utilisateur lors de fautes de frappes ou pour la syntaxe d'une commande.
 
 ```
 +------------------------------------------------+
@@ -90,14 +90,15 @@ ainsi que redirection:
 
 ## Problèmes
 
-L'utilisation de la commande PIPE n'a pas pu etre réalisée.
+L'étape la plus dure était de réfléchir à comment optimiser mon code pour qu'il soit le plus lisible
+possible entre la gestion des "if - else" et "try - except".
+de plus, l'utilisation de la commande PIPE n'a pas pu etre réalisée.
 En effet, j'ai été rattrapé par le temps et la réflection pour optimiser mon code ma
 fait perde du temps. Cependant, je la ferai par la suite.
 
 ## Problèmes
 
-En somme, ce projet m'a permis d'apprendre des nouvelles fonctionnalité en Python3 qui me
-permet de coder très librement et de s'implifier et optimiser mon code le plus possible.
+En somme, ce projet m'a permis d'apprendre des nouvelles fonctionnalités en Python3 qui ma permiss de coder très librement et de s'implifier et optimiser mon code le plus possible.
 Le fait d'avoir transformer tout un "if - elif - else" en 5 commandes, le tout dans unn "try - except"
 m'a fait gagner du temps et plus de lisibilité dans mon code.
 Ce projet ma aussi permis de comprendre comment fonnctionne les commandes UNIX derière ma console.
