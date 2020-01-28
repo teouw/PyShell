@@ -96,7 +96,7 @@ de plus, l'utilisation de la commande PIPE n'a pas pu etre réalisée.
 En effet, j'ai été rattrapé par le temps et la réflection pour optimiser mon code ma
 fait perde du temps. Cependant, je la ferai par la suite.
 
-## Problèmes
+## Conclusion
 
 En somme, ce projet m'a permis d'apprendre des nouvelles fonctionnalités en Python3 qui ma permiss de coder très librement et de s'implifier et optimiser mon code le plus possible.
 Le fait d'avoir transformer tout un "if - elif - else" en 5 commandes, le tout dans unn "try - except"
